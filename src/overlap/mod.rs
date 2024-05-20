@@ -15,7 +15,7 @@ pub trait Overlap<'a, R, D> {
     fn overlap(&'a self, other: &'a D) -> R;
 }
 
-pub(crate) struct ProductOfPDF<F, S> {
+pub struct ProductOfPDF<F, S> {
     pub(crate) first: F,
     pub(crate) second: S,
 }
@@ -35,7 +35,7 @@ where
     }
 }
 
-pub(crate) trait ProductOverlap<R> {
+pub trait ProductOverlap<R> {
     fn calculate(&self) -> R;
 }
 
