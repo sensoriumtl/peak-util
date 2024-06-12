@@ -106,7 +106,7 @@ mod test {
 
     #[test]
     fn standard_normal_integral_product_over_real_line() {
-        let dist = NormalPDF::standard();
+        let dist: NormalPDF<f64> = NormalPDF::standard();
         assert_eq!(
             1.0 / 2.0 / std::f64::consts::PI.sqrt(),
             dist.overlap_with(&dist)

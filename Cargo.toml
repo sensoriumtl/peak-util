@@ -10,7 +10,7 @@ errorfunctions = "0.2"
 nalgebra = "0.32"
 ndarray = "0.15"
 num-traits = "0.2"
-quad-rs = { path = "/Users/cgubbin/rust/my_crates/quad-rs/" }
+quad-rs = { git = "https://github.com/cgubbin/quad-rs.git", branch = "trellis" }
 
 [dev-dependencies]
 approx = "0.5"

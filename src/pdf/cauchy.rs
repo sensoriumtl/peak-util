@@ -93,7 +93,7 @@ mod test {
 
     #[test]
     fn standard_cauchy_integral_product() {
-        let dist = CauchyPDF::standard();
+        let dist: CauchyPDF<f64> = CauchyPDF::standard();
         assert_eq!(1.0 / 2.0 / std::f64::consts::PI, dist.overlap_with(&dist));
     }
 
